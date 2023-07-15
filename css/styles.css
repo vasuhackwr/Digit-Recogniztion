@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+    background-color: rgb(250, 253, 253);
+    color: rgb(6 23  52);   
+}
+
+.title{
+    margin: 0px;
+    padding: 40px;
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    background-color: rgb(6 23  52);
+    color: rgb(102, 222, 227);  
+}
+
+.welcome{
+    margin: 0px;
+    padding: 15px;
+    text-align: center;
+    font-size: 25px;
+    font-style: oblique;
+    background-color: rgb(102, 222, 227);
+    
+}
+
+#content{
+    margin: 0px;
+    padding: 2% 15%;
+    min-height: 500px;
+}
+
+#sketch{
+    /* Prevent nearby text being highlighted when accidentally
+       dragging mouse outside confines of the canvas */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.leftside{
+    margin: 0 auto;
+    margin-top: 4%;
+    text-align: center;    
+}
+
+#myCanvas{
+    border: 3px solid rgb(102, 222, 227);
+    background-color: rgb(6 23  52);
+}
+
+.button{
+    margin: 20px;
+}
+.btn{
+    padding: 10px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: bold;    
+    background-color:rgb(102, 222, 227);
+    border: 1px solid rgb(102, 222, 227);
+    border-radius: 20px;    
+    color:rgb(6, 23, 52);    
+}
+.btn:hover{   
+    background-color: rgb(6 23  52);
+    color: rgb(102, 222, 227); 
+}
+#predict_button{
+    margin-right: 20px;   
+}
+#clear_button{
+    margin-left: 20px;    
+}
+
+.rightside{
+    margin: 0 auto;  
+    margin-top: 1%;
+    text-align: center;      
+}
+
+#prediction_heading{
+    text-decoration: underline;
+    font-size: 30px;
+    font-style: italic;    
+}
+#result{
+    margin: 0px;
+    padding: 0px;
+    font-size: 150px;    
+}
+#confidence{
+    padding-top: 10px;
+    font-size: 20px;    
+}
+
+
+.hr1{
+    border: 2px solid rgb(6, 23, 52);
+}
+
+#about{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;;
+}
+
+#introduction{
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.footer{
+    padding: 10px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(6 23  52);
+    color: white;
+}
+#developer{
+    flex-basis: 100%;
+    text-align: center;
+}
+#linkedin{    
+    padding-right: 20px;    
+}
+#github{
+    padding-left: 20px;
+}
+    

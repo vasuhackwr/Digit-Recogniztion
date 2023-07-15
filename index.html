@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit Recognizer</title>
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+    </style>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"> </script>
+
+<body onload="init()">
+
+    <header>
+        <h1 class = "title">Digit Recognition Web Application</h1>
+
+        <h2 class = "welcome">Welcome!  <br> Draw a digit and click the Predict button.</h2>
+    </header>
+
+    
+    <section id="content">
+        <div id="sketch">
+            <div class="row">
+                <div class="leftside">
+                    <div>
+                        <canvas id="myCanvas" width="300" height="300"></canvas>
+                    </div>
+                    
+                    <div class="button">
+                        <button type="button" class="btn" id="predict_button">Predict</button>
+                        <button type="button" class="btn" id="clear_button">Clear</button>
+                    </div>    
+                </div>
+
+                <div class="rightside">
+                    <h2 id="prediction_heading">Prediction</h2>
+                    <h1 id="result">X</h1>
+                    <p id="confidence">Confidence: 0%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="hr1">
+
+    <section>
+        <h2 id="about">About the Application</h2>
+
+        <p id="introduction">Digit Recognition is a process that converts scanned 
+            documents images into electronically understandable form. Thus, enabling
+            computers to recognize text present in the images. This is a Deep Learning
+            Project based on Convolutional Neural Networks Sequential model.
+            <br> <br>
+            The Handwritten MNIST dataset (Modified National Institute of Standards and
+            Technology) has been loaded using tensorflow keras API for training and 
+            testing of the model. This is a dataset of 60,000 28x28 grayscale images
+            of the 10 digits, along with a test set of 10,000 images.
+            <br><br>
+            It is a 8 layer model with Conv2d, MaxPool2d, Droupout, Flatten and Dense
+            layer combination. Input layer has 32 neurons and the output layer has 10
+            neurons with 10 different classes. 15 epochs are used. 'sparse_categorical_
+            crossentropy' is loss function and 'adam' is used for optimization. Model
+            gives an accurancy of 99.21% on testing dataset.
+            <br><br>
+        </p>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div id="developer">
+                <h3 >Developed By: &emsp;Vasu Verma</h3>
+            </div>
+            <div id="linkedin">
+                <a href="https://linkedin.com/in/vasu-verma-13112002/" target="_blank">
+                    <img src="images/linkedin.png" alt="linkedIn" width="35" >                
+                </a>  
+            </div>
+            <div id="github">
+                <a href="https://github.com/vasuhackwr" target="_blank">
+                    <img src="images/github.png" alt="GitHub" width="35">
+                </a>
+            </div>
+        </div>       
+    </footer>
+
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
